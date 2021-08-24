@@ -67,8 +67,5 @@ document.querySelector("#btn-reset").addEventListener("click",function(){
     let htmlCode= htmlEditor.getValue();
     // let cssCode= "<style>" +cssEditor.getValue() + "</style>";
     let jsCode= "<scri" + "pt>" +jsEditor.getValue() + "</scri" + "pt>";
-    let previewWindow2 = document.querySelector("#preview-window2").contentWindow.document;
-    previewWindow2.open();
-    previewWindow2.write(htmlCode+jsCode);
-    previewWindow2.close();
+    let previewWindow2 = document.querySelector("#preview-window2").contentWindow.document;3
 });
