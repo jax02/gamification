@@ -4,6 +4,7 @@
 body{
     margin: 0px;
     font-family: "Raleway",sans-serif;
+    
 }
 /* .header{
     width: 100%;
@@ -26,8 +27,9 @@ body{
     cursor: pointer;
 }
 .editor{
+    position: relative;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 72px);
     display: flex;
 
     /* 超過邊框隱藏 */
@@ -35,9 +37,18 @@ body{
     
 }
 .introduction{
-    background-color: #fff;
+    
+    background-color: #81ecec;
     width: 100%;
-    height: 20%;
+    height: 40%;
+}
+.choose{
+    display: flex;
+    align-items: center;
+}
+.choose a{
+    padding: 5px;
+    font-size: 30px;
 }
 .editor .code{
     width: 50%;
@@ -70,7 +81,6 @@ body{
     background-color: #7f8fa6;
     width: 100%;
     height: 100%;
-    
     /* border: 1px solid #111; */
 }
 .editor .preview iframe{
