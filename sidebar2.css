@@ -12,7 +12,11 @@ body{
 }
 .sidemenu{
 
-    position: relative;
+    /*relative:editor*/
+    position: absolute;
+    right: 0;
+    
+    /* position: relative; */
     width: 300px;
     height: 100%;
     padding: 50px 0;
