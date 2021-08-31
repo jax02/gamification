@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css"> 
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+            <input type="text" placeholder="Username" name="" value="">
+        </div>
+
+        <div class="textbox">
+            <input type="text" placeholder="Password" name="" value="">
+        </div>
+        
+        <input class="btn" type="button" onclick="storedata()" name="" value="Sign in">
+        <!-- <button onclick="storedata()"> store</button> -->
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-analytics.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
+        
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          const firebaseConfig = {
+            apiKey: "AIzaSyAk7jVf46lJN09HuqqI6ypuk7iYzsX8ygA",
+            authDomain: "test-88784.firebaseapp.com",
+            projectId: "test-88784",
+            storageBucket: "test-88784.appspot.com",
+            messagingSenderId: "560778285958",
+            appId: "1:560778285958:web:a9a5af4dee5565cb465207",
+            measurementId: "G-FMKS7PN1BH"
+          };
+        
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+        
+        function storedata() {
+          app.collection("movies").doc("新世紀福爾摩斯").set({
+            name: "新世紀福爾摩斯",
+            date: "2010",
+            desctiption: "本劇改編自阿瑟·柯南·道爾爵士家喻戶曉的推理小說，一位脾氣古怪的大偵探在現代倫敦的街頭悄悄巡行，四處搜尋線索。",
+            actors: ["班尼迪克·康柏拜區", "馬丁·費曼"]
+          });
+        }
+              </script>
+</body>
+</html>
