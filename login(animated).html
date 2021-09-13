@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login(animated)</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div id="login_div" class="box action="#">
+        <h1>Login</h1>
+        <input type="email" name="" placeholder="Username" id="email_field">
+ <input type="password" name="" placeholder="Password" id="password_field"> 
+        <button onclick="login()">login</button>
+    </div>
+
+    <div id="user_div" class="loggedin-div">
+        <h3>welcome User</h3>
+        <p id="user_para">welcome to firebase web</p>
+        <button onclick="logout()">logout</button>
+       </div>
+</body>
+</html>
