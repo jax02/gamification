@@ -40,6 +40,7 @@ if (user) {
       const email = user.email;
       alert(email);
      document.getElementById("user_para").innerHTML="Welcome user :"  + email;
+     window.location.href="0823.html";
   } 
 } else {
   // User is signed out
