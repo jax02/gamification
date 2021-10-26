@@ -22,7 +22,6 @@ function save() {
     console.log(jsCode);
 
     database.ref('/').set({
-        a: 10262,
         htmlCode: htmlCode,
         jsCode: jsCode
     });
