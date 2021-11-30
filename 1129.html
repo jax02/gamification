@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>1125
+    </title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <link rel="stylesheet" type="text/css" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/darcula.css">
+    <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="codemirror/mode/css/css.js"></script>
+    <script type="text/javascript" src="codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="codemirror/addon/display/placeholder.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sidebar2.css">
+    <link rel="stylesheet" href="nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="progress.css">
+    <script type="text/javascript" src="1129.js"></script>
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+
+<body>
+    <!-- <div class="header"> 
+        <button id="btn-run">Run</button>
+    </div> -->
+    <header class="main-header">
+        <div class="container">
+            <!-- <a href="" class="logo">
+                <img src="https://picsum.photos/100/100" alt="">
+            </a> -->
+
+            <button id="btn-run">Run</button>
+            <button id="btn-reset">Reset</button>
+            <button onclick="save()">save</button>
+            <button onclick="recover()">recover</button>
+            <nav class="main-nav">
+                <a href="#">登出</a>
+                <a href="#">個人資訊</a>
+                <a href="#">學習歷程</a>
+                <a href="#">課程總覽</a>
+            </nav>
+
+
+
+            <!-- <form class="header-search">
+                <input type="search">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form> -->
+        </div>
+    </header>
+    <div class="editor">
+        <div class="code">
+            <div class="html-code">
+                <h3>html-code</h3>
+            </div>
+            <!-- <div class="css-code"></div> -->
+            <div class="js-code">
+                <h3>javascript-code</h3>
+            </div>
+        </div>
+
+        <div class="preview">
+            <div class="introduction">
+                <p>課程介紹</p>
+
+                <!-- 關卡選擇 -->
+                <div class="main-box">
+                    <input type="checkbox" id="check">
+                    <div class="choose">
+                        <a href="#"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+                        <label for="check">Checkpoint</label>
+                        <a href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="icons">
+                        <a href="#">
+                            <div class="checkpoint">1</div>
+                        </a>
+                        <a href="#">
+                            <div class="checkpoint">2</div>
+                        </a>
+                        <a href="#">
+                            <div class="checkpoint">3</div>
+                        </a>
+                        <a href="#">
+                            <div class="checkpoint">4</div>
+                        </a>
+                        <a href="#">
+                            <div class="checkpoint">5</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3>Result</h3>
+            <iframe id="preview-window"></iframe>
+        </div>
+        <!-- 收合式側邊攔 -->
+        <input type="checkbox" id="sidemenu-switch">
+        <div class="sidemenu">
+
+            <form>
+                <input type="search">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <nav>
+
+                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>提示</a>
+                <a href="#"><i class="fa fa-book" aria-hidden="true"></i>課程總攬</a>
+                <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></i>登出</a>
+            </nav>
+            <label for="sidemenu-switch">
+                <i class="fa fa-bolt" aria-hidden="true"></i>
+            </label>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="1129code.js"></script>
+</body>
+
+</html>
