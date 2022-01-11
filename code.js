@@ -1,17 +1,18 @@
-let htmlEditor = CodeMirror(document.querySelector(".editor .code .html-code"), {
-    theme: "darcula",
-    lineNumbers: true,
-    mode: "xml"
+// console.log('test');
+// let htmlEditor = CodeMirror(document.querySelector(".editor .code .html-code"), {
+//     theme: "darcula",
+//     lineNumbers: true,
+//     mode: "xml"
 
 
-});
-htmlEditor.setSize("100%", "100%");
-htmlEditor.setValue(
-    "<canvas" + " " + "\n" + "id=" + "\"" + "fractal" + "\"" + " "
-    + "\n" + "width=" + "\"" + "400" + "\"" + " "
-    + "\n" + "height=" + "\"" + "320" + "\""
-    + ">" + "\n" + "</canvas>"
-);
+// });
+// htmlEditor.setSize("100%", "100%");
+// htmlEditor.setValue(
+//     "<canvas" + " " + "\n" + "id=" + "\"" + "fractal" + "\"" + " "
+//     + "\n" + "width=" + "\"" + "400" + "\"" + " "
+//     + "\n" + "height=" + "\"" + "320" + "\""
+//     + ">" + "\n" + "</canvas>"
+// );
 
 // const cssEditor=CodeMirror(document.querySelector(".editor .code .css-code"),{
 //     lineNumbers:true,
