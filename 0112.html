@@ -116,7 +116,8 @@
                     <div class="navbar-nav ">
                         <a class="nav-link active " aria-current="page" href="#">Home</a>
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#login" href="#">Login</a>
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#signUp" href="#">SignUp</a>
+                        <a class="nav-link signUp" data-bs-toggle="modal" data-bs-target="#signUp" href="#">SignUp</a>
+                        <a class="nav-link logOut" href="#">Logout</a>
                     </div>
                 </div>
             </div>
@@ -220,7 +221,7 @@
     </div>
 
     <!-- 登入表單 Login Modal-->
-    <div class="modal fade" data-bs-backdrop="static" id="login" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade"  id="login" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -271,7 +272,7 @@
                             <label for="nickName" class="form-label">Nick name</label>
                             <input type="text" class="form-control" id="nickName">
                         </div>
-                        <button type="submit" class="btn btn-primary mb-3">SignUp</button>
+                        <button type="submit" onclick="sighUp()" class="btn btn-primary mb-3">SignUp</button>
                     </div>
 
                 </div>
@@ -299,6 +300,7 @@
         crossorigin="anonymous"></script>
     <!-- codeInputJs -->
     <script type="text/javascript" src="input.js"></script>
+    <!-- firebaseAuth -->
     <script type="text/javascript" src="afterLogin.js"></script>
     <script type="text/javascript" src="firebaseConfig.js"></script>
 </body>
