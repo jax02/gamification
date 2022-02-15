@@ -1,0 +1,14 @@
+img {
+    vertical-align: bottom;
+}
+header {
+    padding: 100px 0;
+    background-image: url(img/bg.png);
+    background-size: 500px;
+}
+.item_card img {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.item_card a {
+    display: block;
+}
